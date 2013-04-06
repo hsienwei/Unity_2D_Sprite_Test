@@ -1,0 +1,140 @@
+{"frames": {
+
+"1X2Task-reward11_00.png":
+{
+	"frame": {"x":174,"y":0,"w":172,"h":131},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":74,"w":172,"h":131},
+	"sourceSize": {"w":182,"h":217}
+},
+"1X2Task-reward11_01.png":
+{
+	"frame": {"x":0,"y":0,"w":174,"h":133},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":72,"w":174,"h":133},
+	"sourceSize": {"w":182,"h":217}
+},
+"1X2Task-reward14_00.png":
+{
+	"frame": {"x":346,"y":0,"w":166,"h":127},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":81,"w":166,"h":127},
+	"sourceSize": {"w":182,"h":217}
+},
+"Dog5_00.png":
+{
+	"frame": {"x":290,"y":253,"w":116,"h":134},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":9,"w":116,"h":134},
+	"sourceSize": {"w":120,"h":156}
+},
+"Dog5_01.png":
+{
+	"frame": {"x":346,"y":127,"w":120,"h":126},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":11,"w":120,"h":126},
+	"sourceSize": {"w":120,"h":156}
+},
+"Lucky-Cat_00.png":
+{
+	"frame": {"x":0,"y":133,"w":116,"h":134},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":0,"w":116,"h":134},
+	"sourceSize": {"w":120,"h":146}
+},
+"Lucky-Cat_01.png":
+{
+	"frame": {"x":174,"y":131,"w":116,"h":134},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":0,"w":116,"h":134},
+	"sourceSize": {"w":120,"h":146}
+},
+"Walnut-soldiers_00.png":
+{
+	"frame": {"x":0,"y":483,"w":88,"h":156},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":22,"y":2,"w":88,"h":156},
+	"sourceSize": {"w":120,"h":176}
+},
+"Walnut-soldiers_01.png":
+{
+	"frame": {"x":406,"y":253,"w":92,"h":158},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":19,"y":0,"w":92,"h":158},
+	"sourceSize": {"w":120,"h":176}
+},
+"White-crane_00.png":
+{
+	"frame": {"x":216,"y":379,"w":74,"h":144},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":23,"y":9,"w":74,"h":144},
+	"sourceSize": {"w":120,"h":176}
+},
+"White-crane_01.png":
+{
+	"frame": {"x":290,"y":387,"w":82,"h":144},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":9,"w":82,"h":144},
+	"sourceSize": {"w":120,"h":176}
+},
+"Zebra_00.png":
+{
+	"frame": {"x":108,"y":481,"w":90,"h":112},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":13,"w":90,"h":112},
+	"sourceSize": {"w":120,"h":146}
+},
+"sofa21_00.png":
+{
+	"frame": {"x":0,"y":267,"w":108,"h":114},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":108,"h":114},
+	"sourceSize": {"w":120,"h":126}
+},
+"sofa21_01.png":
+{
+	"frame": {"x":116,"y":265,"w":108,"h":114},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":0,"w":108,"h":114},
+	"sourceSize": {"w":120,"h":126}
+},
+"sofa21_02.png":
+{
+	"frame": {"x":0,"y":381,"w":108,"h":102},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":17,"w":108,"h":102},
+	"sourceSize": {"w":120,"h":126}
+},
+"sofa21_03.png":
+{
+	"frame": {"x":108,"y":379,"w":108,"h":102},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":17,"w":108,"h":102},
+	"sourceSize": {"w":120,"h":126}
+}},
+"meta": {
+	"app": "http://www.texturepacker.com",
+	"version": "1.0",
+	"image": "test.png",
+	"format": "RGBA4444",
+	"size": {"w":512,"h":1024},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:7e571df424194d6dd08f43f7d70b7e72$"
+}
+}
