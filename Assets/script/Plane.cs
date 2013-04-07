@@ -56,14 +56,14 @@ public class Plane : MonoBehaviour {
 		tri[5] = 1;
 		mesh.triangles = tri;
 	
-		uv[0] = new Vector2((float)frameData.frameX / m_Atlas.textureW, 
-							(float)((m_Atlas.textureH - frameData.frameY) - frameData.frameH) / m_Atlas.textureH);
-		uv[1] = new Vector2((float)(frameData.frameX + frameData.frameW )/ m_Atlas.textureW, 
-							(float)((m_Atlas.textureH - frameData.frameY) - frameData.frameH) / m_Atlas.textureH);
-		uv[2] = new Vector2((float)frameData.frameX / m_Atlas.textureW, 
-							(float)(m_Atlas.textureH - frameData.frameY) / m_Atlas.textureH);
-		uv[3] = new Vector2((float)(frameData.frameX + frameData.frameW )/ m_Atlas.textureW, 
-							(float)(m_Atlas.textureH - frameData.frameY) / m_Atlas.textureH);
+		uv[0] = new Vector2((float)frameData.frameX / m_Atlas.m_TextureW, 
+							(float)((m_Atlas.m_TextureH - frameData.frameY) - frameData.frameH) / m_Atlas.m_TextureH);
+		uv[1] = new Vector2((float)(frameData.frameX + frameData.frameW )/ m_Atlas.m_TextureW, 
+							(float)((m_Atlas.m_TextureH - frameData.frameY) - frameData.frameH) / m_Atlas.m_TextureH);
+		uv[2] = new Vector2((float)frameData.frameX / m_Atlas.m_TextureW, 
+							(float)(m_Atlas.m_TextureH - frameData.frameY) / m_Atlas.m_TextureH);
+		uv[3] = new Vector2((float)(frameData.frameX + frameData.frameW )/ m_Atlas.m_TextureW, 
+							(float)(m_Atlas.m_TextureH - frameData.frameY) / m_Atlas.m_TextureH);
 		
 		mesh.uv = uv;
 		
@@ -72,7 +72,7 @@ public class Plane : MonoBehaviour {
 		if(mr == null) {
 			mr = gameObject.AddComponent<MeshRenderer>();
 		}
-		mr.material= m_Atlas.atlasMaterial;
+		mr.material= m_Atlas.m_AtlasMaterial;
 	}
 	
 }

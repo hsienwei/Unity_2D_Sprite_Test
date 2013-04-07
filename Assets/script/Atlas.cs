@@ -5,13 +5,15 @@ using LitJson;
 
 [ExecuteInEditMode]
 public class Atlas : MonoBehaviour {
-	public TextAsset m_TextAsset;
-	// Use this for initialization
+	public TextAsset 	m_TextAsset;
+	public int 			m_TextureW, m_TextureH;
+	public string 		m_TextureFileName;
+	public Texture2D 	m_AtlasTexture;
+	public Material 	m_AtlasMaterial;
+	
 	private Dictionary<string, FrameData> m_FramesList = null;
-	public int textureW, textureH;
-	public string textureFileName;
-	public Texture2D atlasTexture;
-	public Material atlasMaterial;
+	
+	
 	void Start () {
 		loadJSONObject();
 	}
@@ -39,16 +41,16 @@ public class Atlas : MonoBehaviour {
 		
 		JsonData metaDataObj = atlasObj["meta"];
 		if(metaDataObj.GetJsonType() == LitJson.JsonType.None)    return;
-		textureW = (int)metaDataObj["size"]["w"];
-		textureH = (int)metaDataObj["size"]["h"];
-		textureFileName = (string)metaDataObj["image"];
+		m_TextureW = (int)metaDataObj["size"]["w"];
+		m_TextureH = (int)metaDataObj["size"]["h"];
+		m_TextureFileName = (string)metaDataObj["image"];
 		
-		atlasTexture = Resources.Load(textureFileName.Substring(0, textureFileName.IndexOf('.'))) as Texture2D;
-		atlasMaterial= new Material(Shader.Find("Unlit/Transparent"));
-		atlasMaterial.mainTexture = atlasTexture;
+		m_AtlasTexture = Resources.Load(m_TextureFileName.Substring(0, m_TextureFileName.IndexOf('.'))) as Texture2D;
+		m_AtlasMaterial= new Material(Shader.Find("Unlit/Transparent"));
+		m_AtlasMaterial.mainTexture = m_AtlasTexture;
 		
-		Debug.Log(textureFileName);
-		Debug.Log(atlasTexture);
+		Debug.Log(m_TextureFileName);
+		Debug.Log(m_AtlasTexture);
 		JsonData framesDataObj = atlasObj["frames"];
 		if(framesDataObj.GetJsonType() == LitJson.JsonType.None)    return;
 		
