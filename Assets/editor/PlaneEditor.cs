@@ -23,6 +23,7 @@ public class PlaneEditor : Editor {
 		
 		if(targetObject.m_Atlas == null)    return;    
 		resetFrameField(targetObject);
+		targetObject.setFrame();
 	}
 	
 	public override void OnInspectorGUI()
@@ -44,7 +45,6 @@ public class PlaneEditor : Editor {
 			EditorUtility.SetDirty(targetObject);  //add this , save setting value
 			targetObject.setFrame();
 			SceneView.RepaintAll();
-			MeshFilter mf = targetObject.GetComponent(typeof(MeshFilter)) as MeshFilter;
 		}
   	}
 	

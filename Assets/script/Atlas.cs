@@ -10,6 +10,7 @@ public class Atlas : MonoBehaviour {
 	public string 		m_TextureFileName;
 	public Texture2D 	m_AtlasTexture;
 	public Material 	m_AtlasMaterial;
+	private bool        m_IsAtlasSet = false;
 	
 	private Dictionary<string, FrameData> m_FramesList = null;
 	
@@ -20,7 +21,26 @@ public class Atlas : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		#if UNITY_EDITOR
+		
+		if(!m_IsAtlasSet) {
+			Debug.Log("true");
+			loadJSONObject();
+		}
+		else {
+			if(m_TextAsset == null)
+			{
+				Debug.Log("false");
+			
+				m_IsAtlasSet = false;
+				m_TextureW = 0;
+				m_TextureH = 0;
+				m_TextureFileName = null;
+				Destroy(m_AtlasTexture);
+				Destroy(m_AtlasMaterial);
+			}
+		}
+		#endif
 	}
 	
 	void loadJSONObject()
